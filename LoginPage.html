@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+    <div>
+        <style>
+            
+            .center {
+                margin: auto;
+                width: 49.5cm;
+                border-style:double;
+                border-color:rgb(125, 148, 84, 0.904);
+                background-color:(131, 172, 108, 0.774) ;
+                border-width: 0.25cm;
+                padding: 10px;           
+            }
+    
+            ul#mainMenu {
+                list-style: none;
+            }
+
+            ul#mainMenu li {
+            display: inline;
+            padding: 1cm;
+            font-size:250%;
+            Left:2cm;
+        }
+
+        form#LoginMenu {
+            padding:0.5cm;
+           
+            }
+
+        form#LoginMenu input {
+            width:20%;
+            height:0.75cm;
+            
+        }
+        </style>
+    </div>
+
+<title>Log in page</title>
+<body>
+    <body style="background-color:rgb(255, 255, 254);">
+
+        <div class="center">
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="LoginPage.html">Login</a></li>
+                </ul>
+            </nav>
+            <h1><span style=" color:rgb(0, 0, 0)">Please Enter Your Login Details Below</span></h1>
+        </div>
+
+        <form id="LoginMenu" action="insert.php" method="POST">
+            <label for="Name">Name:</label><br>
+            <input type="text" required="required" id="Name" name="Name"><br>
+            <label for="Email">Email:</label><br>
+            <input type="text" required="required" id="Email" name="Email"><br>
+            <label for="Message">Message:</label><br>
+            <input type="text" required="required" id="Message" name="Message"><br>
+            <br>
+            <input type="submit"  value="Submit">
+        </form>
+</body>
+</html>

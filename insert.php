@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "myDB";
+$dbname = "mydb";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -11,9 +11,12 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$Name ($link, $_REQUEST['Name']);
-$Email ($link, $_REQUEST['Email']);
-$Message ($link, $_REQUEST['Message']);
+$name = $_POST['Name'];
+$visitor_email = $_POST['Email'];
+$message = $_POST['Message'];
+
+$sql = "INSERT INTO myguests (Name, Email, Message)
+VALUES (\"$name\", \"$visitor_email\", \"$message\")";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";

@@ -1,0 +1,96 @@
+<!DOCTYPE html> <! doctype is telling the cmputer that this is a html file>
+<! > <! Anything inside these characters is how to comment in html>
+<html lang="en-GB"> <! Set the language of file>
+
+<div> <! Doesn't do anything kinda announces im using class,lang,title or style> <! Allows you to add style atributes like color and more into code>
+    <style>       
+        .header{
+            background-color: rgb(255, 255, 255);
+            position:absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 910px;
+        }   
+    </style>
+</div>
+
+<! Allows you to add style atributes like color and more into code>
+<! Position is what it sounds like, absoloute fixes it to your given dimensions>
+<! Anything like left up etc is exactly what you would imagine>
+<! .header with the {Thes open and close the class} is the code to create the class of CSS>
+
+<div>
+    <style>
+        .header2{
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 61px;
+            bottom: 858px;
+        }
+
+        .BladeIsTheBest{
+            position: absolute;
+            text-align: left;
+            left: 300px;
+            right: 750px;
+            bottom: 750px;
+        }
+
+        img{
+            position: absolute;
+            width: 5cm;
+            height: 5cm;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</div>
+
+
+
+<title> Top 100 Reasons we love Blade </title> <! Writes a Title>
+<body style = background-color:rgb(226,210,203)> <! Creates a body. Everything indented within body will display on page exept title>
+
+
+<div class = "header"> </div> <! This is inputing the class header>
+
+
+<div class = "header2"> </div>
+
+
+<div class = "BladeIsTheBest"> 
+    <h1> Blade is the best </h1> <! h1 is header 1 and you can only create up to 6>
+</div>
+<! To input the class BladeIsTheBest I had to place open div ontop of the code BladeIsTheBest and closed div at the bottom>
+
+<div>
+    <img src="C:\Users\blade\Pictures\Saved Pictures/My-Love.png" alt="My love" />
+</div>
+
+    <ul> <! ul creates an Unorginised list bullet point after bullet point>
+        <li> Blade is a very good leader </li> <! li is list item then things inside of a list>
+        <li> Blade is very honest </li>
+        <li> Blade is very good at keeping secrets </li>
+        <li> Blade is really kind </li>
+        <li> Blade knows when to stop joking </li>
+    </ul>
+    <ol> <! ol is an organised list> 
+        <li> Blade is also very thoughtful </li>
+        <li> He backs his friends </li>
+        <li> Blade's clothes are fresh as fuck </li>
+        <li> Blade has really nice rings </li>
+        <li> His knickname is awesome </li>
+    </ol>
+
+    <p1> Luke, Freddie and Zac are not so bad tbh </p1> <! Similar to header p1 is paragraph 1>
+    <br> <!br mean line brake br for brake, basically goes to the next line>
+    <br>
+    <br>
+    <br>
+    <p2> <a href = "https://www.youtube.com/watch?v=xvFZjo5PgG0"> Click here to see the one and only </a> </p2> <! a is to create a hyper link and href specifies the link (a) goes to in this case the rick roll>
+
+</body>
+</html>

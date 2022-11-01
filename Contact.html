@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+    <div>
+        <style>
+            .center {
+                margin: auto;
+                width: 49cm;
+                text-align: center;
+                border-width: 0.25cm;
+                padding: 10px;                
+            }
+
+            .form{
+                position: absolute;
+                text-align:left;
+                border-style: solid;
+                top:245px;
+                right:20px;
+                background-color: rgba(131, 172, 108, 0.774);
+                border-color:rgb(125, 148, 84, 0.904);
+                border-width: 0.18cm;
+                width: 8cm;
+                height: 50cm;
+            }
+
+            ul#mainMenu {
+                margin: auto;
+                position: fixed;
+                border-style:double;
+                text-align: center;
+                border-color:rgb(125, 148, 84, 0.904);
+                background-color: cadetblue ;
+                border-width: 0.25cm;
+                padding: 10px;   
+                width: 49cm;
+                list-style: none;
+
+            }
+
+            ul#mainMenu li {
+            display: inline;
+            padding: 2cm;
+            font-size:250%;
+            Left:2cm;
+        }
+
+        form#LoginMenu {
+            padding:0.5cm;
+           
+            }
+
+        form#LoginMenu input {
+            width:20%;
+            height:0.75cm;
+            
+        }
+        </style>
+    </div>
+
+    <title>Contact Page</title>
+    <body>
+        <body style="background-color:rgb(255, 255, 254);">
+
+            <div class = "center">
+                <nav>
+                    <ul id="mainMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ContactPage.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 >Have any questions?</h1>
+                <p1>Fill out our form bellow and we will get back to you.</p1>
+            </div>
+
+    
+            <form id="LoginMenu" action="insert.php" method="POST">
+                <label for="Name">Name:</label><br>
+                <input type="text" required="required" id="Name" name="Name"><br>
+                <label for="Email">Email:</label><br>
+                <input type="text" required="required" id="Email" name="Email"><br>
+                <label for="Message">Message:</label><br>
+                <input type="text" required="required" id="Message" name="Message"><br>
+                <br>
+                <input type="submit"  value="Submit">
+            </form>
+
+
+    </body>

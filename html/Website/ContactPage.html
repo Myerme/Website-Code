@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+    <div>
+        <style>
+            
+            .center {
+                margin: auto;
+                width: 49.5cm;
+                background-color:(131, 172, 108, 0.774) ;
+                padding: 10px;           
+            }
+    
+            ul#mainMenu {
+                list-style: none;
+            }
+
+            ul#mainMenu li {
+            display: inline;
+            padding: 1cm;
+            font-size:250%;
+            Left:2cm;
+        }
+
+        form#LoginMenu {
+            padding:0.5cm;
+           
+            }
+
+        form#LoginMenu input {
+            width:20%;
+            height:0.75cm;
+            
+        }
+        </style>
+    </div>
+
+<title>Contact Page</title>
+<body>
+    <body style="background-color:rgb(255, 255, 254);">
+
+        <div class="center">
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ContactPage.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <h1><span style=" color:rgb(0, 0, 0)">Please enter your information details below</span></h1>
+        </div>
+
+        <form id="LoginMenu" action="insert.php" method="POST">
+            <label for="Name">Name:</label><br>
+            <input type="text" required="required" id="Name" name="Name"><br>
+            <label for="Email">Email:</label><br>
+            <input type="text" required="required" id="Email" name="Email"><br>
+            <label for="Message">Message:</label><br>
+            <input type="text" required="required" id="Message" name="Message"><br>
+            <br>
+            <input type="submit"  value="Submit">
+        </form>
+</body>
+</html>
